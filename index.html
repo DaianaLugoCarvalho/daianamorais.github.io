@@ -17,14 +17,14 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-roxo">
-        <div class="container">
+        <div class="container ">
             <a class="navbar-brand text-white" href="#">{re<span class="font-weight-light">programa</span>}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
                 <ul class="navbar-nav  ">
                     <li class="nav-item  ">
                         <a class="nav-link text-white" href="#">Sobre</a>
@@ -82,18 +82,20 @@
                 <h1>Daiana Lugo</h1>
                 <h2 class="font-italic font-weight-light">Desenvolvedora front-end</h2>
 
-                <div class="d-flex justify-content-around redes-sociais" >
-                    <a href="" target="_blank">
+    <!-- flex-column > transforma em coluna o mobile, a classe já esta cert a para isso,   -->
+    <!-- flex-md-row > transforma em linha quando esta em desk -->
+                <div class=" d-flex flex-column flex-md-row justify-content-around redes-sociais" >
+                    <a class="p-3" href="" target="_blank">
                         <i class="fab fa-github-alt"></i>
                         <span>github.com/DaianaLugoCarvalho</span>
                     </a>
 
-                    <a href="" target="_blank">
+                    <a class="p-3" href="" target="_blank">
                         <i class="fab fa-linkedin"></i>
                         <span>linkedin.com/daianaLugo</span>
                     </a>
 
-                    <a href="" target="_blank">
+                    <a class="p-3" href="" target="_blank">
                         <i class="fas fa-envelope"></i>
                         <span>daianalugo.carvalho@gmail.com</span>
                     </a>
@@ -104,63 +106,130 @@
     </header>
 
     <!-- seções - habilidades e sobre -->
-    <section>
-        <h3>Habilidades</h3>
-        <div>
-            <i class="fab fa-html5"></i>
-            <p>HTML</p>
-        </div>
-        <div>
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS</p>
-        </div>
-        <div>
-            <i class="fab fa-js"></i>
-            <p>JavaScript</p>
-        </div>
-        <div>
-            <i class="fab fa-sass"></i>
-            <p>Sass</p>
-        </div>
-        <div>
-            <i class="fas fa-book"></i>
-            <p>jQuery</p>
-        </div>
-        <div>
-            <i class="fab fa-react"></i>
-            <p>React</p>
-        </div>
-        <div>
-            <i class="fab fa-bootstrap"></i>
-            <p>Bootstrap</p>
-        </div>
-        <div>
-            <i class="fab fa-git-alt"></i>
-            <p>Git</p>
-        </div>
-        <div>
-            <i class="fas fa-tasks"></i>
-            <p>Scrum</p>
-        </div>
+    <section class="bg-roxo text-white ">
+            
+        <div class= "container  d-flex flex-column flex-lg-row ">                 
+                  
+          
+                <h3 class="text-center">Habilidades</h3>
+               
 
-        <section>
-            <h3>Sobre</h3>
-            <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
-                magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
-                necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
-            <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
-        </section>
-    </section>
+                <div class="row ">                
+                    <div class="col">
+                        <i class="fab fa-html5 "></i>
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="col">
+                        <i class="fab fa-css3-alt "></i>
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="col">
+                        <i class="fab fa-js "></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>   
+                
+                <div class="row ">
+                    <div class="col">
+                        <i class="fab fa-sass "></i>
+                        <p>Sass</p>
+                    </div>
+
+                    <div class="col">
+                        <i class="fas fa-book "></i>
+                        <p>jQuery</p>
+                    </div>
+
+                    <div class="col">
+                        <i class="fab fa-react "></i>
+                        <p>React</p>
+                    </div>
+                </div> 
+
+                
+                <div class="row ">
+                    <div class="col">
+                        <i class="fab fa-bootstrap "></i>
+                        <p>Bootstrap</p>
+                    </div>
+
+                    <div class="col">
+                        <i class="fab fa-git-alt "></i>
+                        <p>Git</p>
+                    </div>
+
+                    <div class="col">
+                        <i class="fas fa-tasks "></i>
+                        <p>Scrum</p>
+                    </div>
+
+                  
+
+            </div>      
+               
+        
+            <div>   
+                <section>
+                    <h3 class="text-center">Sobre</h3>
+                    <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
+                        magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
+                        necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
+                    <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
+                </section>
+            </div>
+
+        </div>  
+    </section>    
+    
 
     <!-- cards - meus projetos -->
-    <section>
-        <h3>Portfólio</h3>
-        <!-- cards -->
+    <section class="py-4" >
+        <div class="container text-center">
+            <h3>Portfólio</h3>
+
+            <!-- cards -->
+        <div class="row">
+
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/images/modal-01.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do      card e fazer preencher o conteúdo do card.
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/images/modal-02.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do        card e fazer preencher o conteúdo do card.                      
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                    </div>
+
+
+            <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./assets/images/modal-03.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do card</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título   do card e fazer preencher o conteúdo do card.                          
+                            </p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+            </div>
+            </div>
+
+    </div>
+
+
         <!-- modais -->
-        <img src="./assets/images/modal-01.jpg" alt="">
-        <img src="./assets/images/modal-02.jpg" alt="">
-        <img src="./assets/images/modal-03.jpg" alt="">
+        
     </section>
 
     <!-- footer -->
@@ -182,3 +251,6 @@
 </body>
 
 </html>
+
+
+ 
