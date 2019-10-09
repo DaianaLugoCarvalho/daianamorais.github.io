@@ -82,7 +82,7 @@
                 <h1>Daiana Lugo</h1>
                 <h2 class="font-italic font-weight-light">Desenvolvedora front-end</h2>
 
-    <!-- flex-column > transforma em coluna o mobile, a classe já esta cert a para isso,   -->
+    <!-- flex-column > transforma em coluna o mobile, a classe já esta certa para isso,   -->
     <!-- flex-md-row > transforma em linha quando esta em desk -->
                 <div class=" d-flex flex-column flex-md-row justify-content-around redes-sociais" >
                     <a class="p-3" href="" target="_blank">
@@ -105,14 +105,12 @@
         </section>
     </header>
 
-    <!-- seções - habilidades e sobre -->
+    <!-- seções - habilidades e sobre   lg-->
     <section class="bg-roxo text-white ">
             
-        <div class= "container  d-flex flex-column flex-lg-row ">                 
-                  
-          
-                <h3 class="text-center">Habilidades</h3>
-               
+        <div class= "container  d-flex  flex-column  flex-md-row ">                 
+             <div class="col">          
+                <h3 class="text-center">Habilidades</h3>               
 
                 <div class="row ">                
                     <div class="col">
@@ -150,7 +148,7 @@
 
                 
                 <div class="row ">
-                    <div class="col">
+                    <div class="col ">
                         <i class="fab fa-bootstrap "></i>
                         <p>Bootstrap</p>
                     </div>
@@ -163,15 +161,12 @@
                     <div class="col">
                         <i class="fas fa-tasks "></i>
                         <p>Scrum</p>
-                    </div>
-
-                  
-
-            </div>      
-               
+                    </div>    
+                </div>  
+            </div>                
         
-            <div>   
-                <section>
+               
+                <section class="col">
                     <h3 class="text-center">Sobre</h3>
                     <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
@@ -179,62 +174,130 @@
                         necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
                     <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
                 </section>
-            </div>
-
         </div>  
     </section>    
     
 
     <!-- cards - meus projetos -->
-    <section class="py-4" >
-        <div class="container text-center">
+    <section class="py-4   " >
+        <div class="container text-center   ">
             <h3>Portfólio</h3>
+    <!-- cards -->
+            <!-- Card 1 -->
+        <div class= "d-flex row ">
+            <div class="card tamanhoCard col-sm-4 " >
+                <img class="card-img-top tamanhoimg  " src="./assets/images/modal-01.png" alt="Imagem de capa do card">
 
-            <!-- cards -->
-        <div class="row">
+                <div class="card-body">
+                    <h5 class="card-title">M de Maravilhosa</h5>
+                    <p class="card-text"> </p>
+                    <img src="./assets/images/sample-photo-01.jpg">
+                    <a href="#" class="btn btn-primary"  data-toggle="modal" data-target="#modal1">Visitar</a>
+                </div>
+            </div>
 
-                    <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/modal-01.png" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do      card e fazer preencher o conteúdo do card.
-                        </p>
-                        <a href="#" class="btn btn-primary">Visitar</a>
-                    </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/modal-02.png" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do        card e fazer preencher o conteúdo do card.                      
-                        </p>
-                        <a href="#" class="btn btn-primary">Visitar</a>
-                    </div>
-                    </div>
-
-
-            <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="./assets/images/modal-03.png" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Título do card</h5>
-                            <p class="card-text">Um exemplo de texto rápido para construir o título   do card e fazer preencher o conteúdo do card.                          
-                            </p>
-                            <a href="#" class="btn btn-primary">Visitar</a>
+            <!-- modal 1 -->
+        <div class="modal" tabindex="-1" role="dialog" id="modal1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Título do modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
+    
+                        <div class="modal-body">
+                          <p>Texto do corpo do modal, é aqui.</p>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Card 2 -->
+            <div class="card  tamanhoCard col-sm-4" >
+                <img class="card-img-top tamanhoimg  " src="./assets/images/modal-02.png" alt="Imagem de capa do card">
+                <div class="card-body ">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">Um exemplo de texto rápido para construir o título do   card e fazer preencher o conteúdo do card.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal2" >Visitar</a>
+                </div>
             </div>
+
+            <!-- modal 2 -->
+        <div class="modal" tabindex="-1" role="dialog" id="modal2" >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Título do modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+    
+                        <div class="modal-body">
+                          <p>Texto do corpo do modal, é aqui.</p>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card  tamanhoCard  col-sm-4" >
+                <img class="card-img-top tamanhoimg  " src="./assets/images/modal-03.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">Um exemplo de texto rápido para construir o título   do card e fazer preencher o conteúdo do card.</p>
+                    <a href="#" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+        </div>
 
     </div>
 
 
         <!-- modais -->
         
+
+        
+        
+        <!-- modal 3 -->
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Título do modal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+    
+                    <div class="modal-body">
+                        <p>Texto do corpo do modal, é aqui.</p>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+                      
     </section>
 
     <!-- footer -->
-    <footer>
-        <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a href="http://reprograma.com.br/index.html"
+    <footer class="bg-roxo text-white text-center " >
+        <small>Desenvolvido com Bootstrap por Daiana Lugo enquanto aluna da<span><a href="http://reprograma.com.br/index.html"
                     target="_blank">{reprograma}</a></span> 2019</small>
     </footer>
 
